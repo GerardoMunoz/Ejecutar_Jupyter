@@ -3,25 +3,47 @@
 Para este tutorial se asume que ya está instalado Python y Jupyter en el computador.
 
 ## Parte 1 Comprobar la instalación de Jupyter
-Algunas instalaciones actializan la variable de entorno `path`, permitiendo ejecutar Jupyter directamente. En otros casos es necesario actializar la variable de entorno, lo cual se explica en la pare 2 de este documento.
+Algunas instalaciones actualizan la variable de entorno `path`, permitiendo ejecutar Jupyter directamente. En otros casos es necesario actualizar la variable de entorno, lo cual se explica en la pare 2 de este documento.
 
-Una forma para saber si la varialbe de entorno esta actualizada es intentando ejecutar Jupyter en la ventana de comandos de Windows. Lo primero es abrir la ventana de comandos
+Una forma para saber si la variable de entorno esta actualizada es intentando ejecutar Jupyter en la ventana de comandos de Windows. Lo primero es abrir la ventana de comandos
  ![Abrir_CMD](https://github.com/GerardoMunoz/Ejecutar_Jupyter_Windows/raw/main/Abrir_CMD.png)
 
-### Vaiable de entorno `path` acualizada 
-Si la varialbe de entorno esta actualizada se ve de la siguiete forma 
+### Variable de entorno `path` actualizada 
+Si la variable de entorno esta actualizada, se ve de la siguiente forma luego de introducir `jupyter`.
 
 ![CMD_Jupyter_si](https://github.com/GerardoMunoz/Ejecutar_Jupyter_Windows/raw/main/CMD_Jupyter_si.png)
 
-y puede pasar sirectamente a la parete 3
+En este caso puede pasar directamente a la parte 3.
 
 
-### Vaiable de entorno `path` no está acualizada 
-Si la varialbe de entorno no esta actualizada se ve de la siguiete forma 
+### Variable de entorno `path` no está actualizada 
+Si la variable de entorno no está actualizada se ve de la siguiente forma luego de introducir `jupyter`.
 
 ![CMD_Jupyter_si](https://github.com/GerardoMunoz/Ejecutar_Jupyter_Windows/raw/main/CMD_Jupyter_si.png)
 
-para acualizarla debe seguir los pasos de la parte 2
+Para actualizarla debe seguir los pasos de la parte 2.
 
-## Parte 2 Variables de entorno
+## Parte 2 Encontrar jupyter
+En la siguiente imagen se ilustra como yo encontré la dirección de Jupyter en mi disco duro introduciendo el comando `dir jupyter.exe /s`.
 
+![buscar_jupyter](https://github.com/GerardoMunoz/Ejecutar_Jupyter_Windows/raw/main/buscar_jupyter.png)
+
+Luego debe adicionar esa dirección en la variable de entorno `path`
+
+## Parte 3 Crear el acceso directo
+
+En las siguientes imágenes se ilustra como crear el acceso directo.
+
+![crea_acceso_directo](https://github.com/GerardoMunoz/Ejecutar_Jupyter_Windows/raw/main/crea_acceso_directo.png)
+
+![acceso_directo_paso1](https://github.com/GerardoMunoz/Ejecutar_Jupyter_Windows/raw/main/acceso_directo_paso1.png)
+
+![acceso_directo_paso2](https://github.com/GerardoMunoz/Ejecutar_Jupyter_Windows/raw/main/acceso_directo_paso2.png)
+
+![acceso_directo_paso3](https://github.com/GerardoMunoz/Ejecutar_Jupyter_Windows/raw/main/acceso_directo_paso3.png)
+
+En el primer campo adiciona el texto ` notebook --notebook-dir=C:\`
+
+En el siguiente campo sólo deja `C:\`
+
+![acceso_directo_paso4](https://github.com/GerardoMunoz/Ejecutar_Jupyter_Windows/raw/main/acceso_directo_paso4.png)
